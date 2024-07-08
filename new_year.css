@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family:  "Inter", sans-serif;
 }
 
 
@@ -76,7 +79,7 @@
     height: 498px;
     margin: 41px auto;
     /* text-align: center;    */
-    background-image: linear-gradient(80deg, black, transparent), url('images/Vectorrr.png');
+    background-image: linear-gradient(80deg,  black, transparent), url('images/Vectorrr.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;  
@@ -108,11 +111,11 @@
 .join_now{
     color: white;
     /* width: 150px; */
-    font-size: 30px;
+    font-size: 20px;
     padding: 10px;
     text-decoration: none;
-    background-color: pink;
-    transform: translateX(-170px);
+    /* background-color: pink; */
+    transform: translateX(-190px);
     
    
 }
@@ -120,6 +123,7 @@
 .welcome_title_1{
     font-size: 60px;
     text-align: left;
+    letter-spacing: 6px;
 }
 
 .welcome_description{
@@ -147,6 +151,10 @@
  
 }
 
+ span{
+    color: red;
+}
+
 
 .btn_join_now{
     width: 150px;
@@ -157,6 +165,7 @@
     padding: 15px 20px;
     margin: 20px auto;
     text-align: center;
+    font-size: 16px;
     
     
 }
@@ -203,7 +212,7 @@
     width: 1095px;
     height: 818px;
     margin: 120px auto; 
-    background-color: bisque;
+    /* background-color: bisque; */
     display: flex;
     flex-direction: column;
     gap: 467px;
@@ -222,6 +231,10 @@
 
 }
 
+.holiday_sale_title_parent h1{
+    font-size: 50px;
+}
+
 .holiday_sale_section .red_image{
     position: relative;
     width: 1095px;
@@ -235,19 +248,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 140px;
+    gap: 210px;
     z-index: 20;
-    transform: translateY(300px);
+    
+    transform: translateY(360px);
+    
 }
 
 .box{
     width: 560px;
     height: 480px;
+    transform: translateX(20px);
     
 }
 
 .discount{
-    transform: translateY(-120px);
+    /* transform: translateX(-10px); */
+    transform: translateY(-110px);
+    
 }
 
 
@@ -291,8 +309,18 @@
 .subscribe_button_container{
     width: 538px;
     height: 60px;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* text-align: center; */
+}
+
+.subscribe_button_container h5{
+    margin-left: 20px;
+    color: black;
+    opacity: 0.3;
 }
 
 .btn{
@@ -300,9 +328,19 @@
     float: right;
     width: 174px;
     height: 60px;
-    border-radius:  50px;
-    
+    border-radius:  0px 50px 50px 0px;
+    text-align: center;
+    color: white;
+
 }
+
+.btn h3{
+    color: white;
+    margin: 18px;
+}
+
+
+/* footer section styles */
 
 footer{
     background-color: black;
@@ -320,12 +358,38 @@ footer div, hr{
     width: 100%;
 }
 
-footer .one{    
+.one{    
     display: flex;
-    justify-content: space-around;
-    gap: 130px;
+    justify-content: space-between;
     align-items: center;
+    /* border: 1px solid red; */
+    gap: 500px;
+    
 }
+
+.address-1{
+    padding-left: 310px;
+   
+}
+
+.address-2{
+    display: flex; 
+    flex-direction: column;   
+    padding-right: 70px;
+}
+
+ .sec-1 , .sec-2{
+    display: flex; 
+    gap: 15px;
+   
+}
+
+
+footer  .contact_container{
+    display: flex;
+    /* flex-direction: column; */
+}
+
 
 
 footer .two{  
@@ -338,7 +402,7 @@ footer .two{
 footer .three{  
     display: flex;
     justify-content: space-around;
-    gap: 130px;
+    gap: 260px;
     align-items: center;
 }
 
