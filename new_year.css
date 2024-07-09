@@ -7,16 +7,19 @@
 }
 
 
+/* linear-gradient(200deg, black, transparent), */
 .announcement_banner{
     width: 1095px;
     height: 498px;
     margin: 41px auto;
     text-align: center;    
-    background-image: linear-gradient(200deg, black, transparent), url('images/Banner_Image.png');
+    background-color: rgba(0, 0, 0, 0.55);
+    background-image:  url('images/Banner_Image.png');    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;     
     position: relative;
+    background-blend-mode: overlay;
 }
 
 
@@ -79,43 +82,54 @@
     height: 498px;
     margin: 41px auto;
     /* text-align: center;    */
-    background-image: linear-gradient(80deg,  black, transparent), url('images/Vectorrr.png');
+    background-image: linear-gradient(80deg,  black, 50%, transparent), url('images/Vectorrr.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;  
+    border-radius: 10px;
+    position: relative;
     
-    display: flex;
-    flex-direction: column;
+    display: flex;    
     justify-content: center;
     align-items: center;
+   
     
+}
+
+.welcome_banner_sub_section{
+    position: relative;
+    width: 90%;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    /* gap: 1000px; */
 }
 
 
 .welcome_banner_title_parent{
+    position: absolute;
+    width: 565px;
     
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: left;
     gap: 25px;
-    width: 524px;
-    height: 204px;     
-    color: white; 
-    margin-left: 0;
+
+    /* text-align: center; */
+    text-align: left;
+   
+    color: white;    
     transform: translateX(-210px);
 }
 
 .join_now{
     color: white;
-    /* width: 150px; */
     font-size: 20px;
     padding: 10px;
     text-decoration: none;
-    /* background-color: pink; */
-    transform: translateX(-190px);
+    
+    transform: translateX(-220px);
     
    
 }
@@ -128,6 +142,18 @@
 
 .welcome_description{
     text-align: left;
+}
+
+.welcome_banner_img_container{
+    position: absolute;
+    width: 400px;
+    margin-left: 650px;
+}
+
+.welcome_banner img{
+    width: 266px;
+    height: 386px;
+    /* margin-right: 500px; */
 }
 
 .address_section{
@@ -166,6 +192,7 @@
     margin: 20px auto;
     text-align: center;
     font-size: 16px;
+    cursor: pointer;
     
     
 }
@@ -299,6 +326,7 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
+    text-align: center;
 }
 
 .subscribe_section img{
@@ -354,33 +382,49 @@ footer{
     gap: 30px;
 }
 
-footer div, hr{
+footer div{
     width: 100%;
 }
 
 .one{    
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     /* border: 1px solid red; */
-    gap: 500px;
+    gap: 100px;
+    text-align: center;
     
 }
 
 .address-1{
-    padding-left: 310px;
+    width: 70%;
+    height: 100px;   
+    margin-left: 180px;
    
 }
 
+.address-1 h3, .address-2 h3{
+    font-size: 14px;
+    
+}
+
 .address-2{
+    width: 50%;
     display: flex; 
     flex-direction: column;   
-    padding-right: 70px;
+    padding-left: 400px;
+    
+    margin-right: 180px;
+    justify-content: center;
+    align-items: center;
+    
 }
 
  .sec-1 , .sec-2{
     display: flex; 
     gap: 15px;
+   
+    
    
 }
 
@@ -396,14 +440,15 @@ footer .two{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 footer .three{  
     display: flex;
     justify-content: space-around;
-    gap: 260px;
+    gap: 300px;
     align-items: center;
+    margin-top: 40px;
 }
 
 
@@ -411,4 +456,5 @@ footer .three{
 footer hr{
     background-color: white;
     opacity: 0.2;
+    width: 90%;
 }
